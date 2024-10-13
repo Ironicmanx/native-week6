@@ -15,6 +15,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
@@ -105,6 +106,7 @@ fun MainScreen(navController: NavController) {
         content = { padding ->
             Text(
                 text = "Content for Home screen",
+                style = MaterialTheme.typography.displayMedium,
                 modifier = Modifier.padding(padding)
             )
         }
@@ -119,6 +121,7 @@ fun InfoScreen(navController: NavController) {
         content = { padding ->
             Text(
                 text = "Content for Info screen",
+                style = MaterialTheme.typography.displayMedium,
                 modifier = Modifier.padding(padding)
             )
         }
@@ -133,6 +136,7 @@ fun SettingScreen(navController: NavController) {
         content = { padding ->
             Text(
                 text = "Content for Settings screen",
+                style = MaterialTheme.typography.displayMedium,
                 modifier = Modifier.padding(padding)
             )
         }
