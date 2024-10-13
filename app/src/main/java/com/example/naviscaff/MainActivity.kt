@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
 fun ScaffoldApp() {
     val navController = rememberNavController()
 
-    // Correct usage of NavHost with composable destinations
+
     NavHost(
         navController = navController,
         startDestination = "Home"
