@@ -62,7 +62,7 @@ fun MainTopBar(title: String, navController: NavController) {
     var expanded by remember { mutableStateOf(false) }
 
     TopAppBar(
-        title = { Text(text = title) }, // Use the passed title
+        title = { Text(text = title) },
         actions = {
             IconButton(onClick = { expanded = !expanded }) {
                 Icon(Icons.Filled.MoreVert, contentDescription = null)
